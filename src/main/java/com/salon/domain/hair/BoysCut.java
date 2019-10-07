@@ -3,10 +3,13 @@ package com.salon.domain.hair;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
-@Entity
+@Entity()
+@Table(name = "boys_cut")
 public class BoysCut {
     @Id
+    private int boysCode;
     @Column(name = "type")
     private String types;
     @Column(name = "price")

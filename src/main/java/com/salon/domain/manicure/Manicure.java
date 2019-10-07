@@ -11,6 +11,7 @@ import java.util.Set;
 @Entity
 public class Manicure {
     @Id
+    private int maniCode;
     @Column(name = "type")
     private String types;
     @Column(name = "color")

@@ -7,6 +7,7 @@ import javax.persistence.Id;
 @Entity
 public class Nails {
     @Id
+    private int nailCode;
     @Column(name = "shape")
     private String shapes;
     @Column(name = "color")

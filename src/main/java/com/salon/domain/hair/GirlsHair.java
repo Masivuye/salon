@@ -8,6 +8,8 @@ import java.util.Set;
 @Entity
 public class GirlsHair {
     @Id
+    @Column(name = "girls_code")
+    private int girlsCode;
     @Column(name = "type")
     private String types;
     @Column(name = "price")

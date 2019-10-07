@@ -10,6 +10,8 @@ import java.util.Set;
 @Entity
 public class HairStyle {
     @Id
+    @Column(name = "styl_code")
+    private int stleCode;
     @Column(name = "type")
     private String types;
     @Column(name = "price")
