@@ -46,4 +46,5 @@ public class SalonSecurity extends WebSecurityConfigurerAdapter {
         final BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
         return bCryptPasswordEncoder;
     }
+
 }
