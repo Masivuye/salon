@@ -27,5 +27,10 @@ public class BookingController {
         bookingRepository.save(booking);
         return bookingRepository.findAll();
     }
+    @GetMapping(value = "/delete")
+    public String deleteBooking(Integer id){
+        bookingRepository.deleteById(id);
+        return "redirect:/";
+    }
 
 }
